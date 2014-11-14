@@ -21,6 +21,7 @@
 		021CA4AC190EAB8C00F6B0D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021CA48E190EAB8B00F6B0D3 /* UIKit.framework */; };
 		021CA4B4190EAB8C00F6B0D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 021CA4B2190EAB8C00F6B0D3 /* InfoPlist.strings */; };
 		021CA4B6190EAB8C00F6B0D3 /* BingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 021CA4B5190EAB8C00F6B0D3 /* BingoTests.m */; };
+		021CA4C2190EABDD00F6B0D3 /* RLBingoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 021CA4C1190EABDD00F6B0D3 /* RLBingoGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		021CA4B1190EAB8C00F6B0D3 /* BingoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BingoTests-Info.plist"; sourceTree = "<group>"; };
 		021CA4B3190EAB8C00F6B0D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		021CA4B5190EAB8C00F6B0D3 /* BingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BingoTests.m; sourceTree = "<group>"; };
+		021CA4C0190EABDD00F6B0D3 /* RLBingoGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLBingoGame.h; sourceTree = "<group>"; };
+		021CA4C1190EABDD00F6B0D3 /* RLBingoGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLBingoGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		021CA490190EAB8B00F6B0D3 /* Bingo */ = {
 			isa = PBXGroup;
 			children = (
+				021CA4BF190EABC100F6B0D3 /* Models */,
 				021CA499190EAB8B00F6B0D3 /* RLAppDelegate.h */,
 				021CA49A190EAB8B00F6B0D3 /* RLAppDelegate.m */,
 				021CA49C190EAB8B00F6B0D3 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				021CA4B2190EAB8C00F6B0D3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		021CA4BF190EABC100F6B0D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				021CA4C0190EABDD00F6B0D3 /* RLBingoGame.h */,
+				021CA4C1190EABDD00F6B0D3 /* RLBingoGame.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				021CA49B190EAB8B00F6B0D3 /* RLAppDelegate.m in Sources */,
 				021CA497190EAB8B00F6B0D3 /* main.m in Sources */,
 				021CA4A1190EAB8B00F6B0D3 /* RLViewController.m in Sources */,
+				021CA4C2190EABDD00F6B0D3 /* RLBingoGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +396,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bingo/Bingo-Prefix.pch";
 				INFOPLIST_FILE = "Bingo/Bingo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +411,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bingo/Bingo-Prefix.pch";
 				INFOPLIST_FILE = "Bingo/Bingo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -459,6 +477,7 @@
 				021CA4BB190EAB8C00F6B0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		021CA4BC190EAB8C00F6B0D3 /* Build configuration list for PBXNativeTarget "BingoTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +486,7 @@
 				021CA4BE190EAB8C00F6B0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
